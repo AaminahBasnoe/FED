@@ -121,7 +121,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   
-  De lessen gaan tot nu toe wel goed. Ik begrijp de stof redelijk goed en maak veel aantekeningen. Het is wel zo dat ik het in de les vaak allemaal wel snap, maar wanneer ik het dan zelf in mijn eigen website moet toepassen, vind ik het nog wel lastig. Ik ben nog niet zo ver met mijn code. Ik heb wel basis
+  De lessen gaan tot nu toe wel goed. Ik begrijp de stof redelijk goed en maak veel aantekeningen. Het is wel zo dat ik het in de les vaak allemaal wel snap, maar wanneer ik het dan zelf in mijn eigen website moet toepassen, vind ik het nog wel lastig. Ik ben nog niet zo ver met mijn code. Ik heb nu de html, maar nog geen css. De HTML is naar mijn idee wel goed gegaan, alleen twijfel ik nog of sommige delen wel kloppen. 
+
+  
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -129,7 +131,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Aaminah      | Sjors          | Nada    | Jesse        |
   | ---            | ---                | ---          | ---              |
   | Ik wil graag bespreken of het eerste gedeelte van mijn html in orde is. |  Ik zou graag willen weten of er een tijdschema is voor de website, of dat we zelf volledig het tempo bepalen.            | ik zou graag willen weten hoe je uitklapbare footer kan maken     | en dan ik dat    |
-  | Ik weet nog niet helemaal hoe ik het bovenste gedeelte van de 2e pagina in elkaar zit kwa html.  | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Ik weet nog niet helemaal hoe het bovenste gedeelte van de 2e pagina in elkaar zit kwa html.  | dit als er tijd is | nog een punt | dit wil ik zeker |
   | Ik wil iets laten scrollen, maar de srollbar moet niet zichtbaar zijn. Ook wil ik graag weten hoe ik een timer op een carousel/slider kan zetten met een counter erbij.            | ...                | ...          | ...              |
 
 
