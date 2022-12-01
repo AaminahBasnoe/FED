@@ -138,10 +138,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Alt leegtalen bij de emoji's (ipv daarvan een aria label)
+  - Je mag dingen kopiëren met mate (met de bronvermelding erbij ofc)
+  - Section 2 is een grid met een media query (zie code op teams).
+  - 
 
 </details>
 
@@ -157,15 +157,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Ik ben veel vooruit gekomen sinds het vorige voortgangsgesprek. Ik heb de eerste pagina (de homepagina) bijna af. Aan de tweede pagina moet ik nog beginnen. Mijn CSS is wel nog wat slordig. Hier ga ik later aan zitten en alles netjes gestructureerd neerzetten en alle code in commentaar weghalen. Aan mijn javascript ben ik ook nog niet begonnen. Verder moet ik ook nog goed kijken naar de dingen die ik wil toevoegen voor de surface plane. Tot nu toe gaat het coderen best wel goed. Ik snap wat ik doe en weet ongeveer wel hoe ik verder moet. Wel twijfel ik nog steeds of ik dingen soms wel op de juiste manier doe. 
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Aaminah      | Nada          | Sjors    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Ik wil graag weten hoe ik een infinite slider kan maken met een timer en een counter die laat zien welke img van de slider te zien is  | Ik wil graag weten hoe ik een uitklap footer maak             | Ik zou graag willen weten of de HTML van mijn navigatie semantisch correct is    | en dan ik dat    |
+  |  Ik wil graag weten hoe je een scrollbar weghaald | Ik wil  weten hoe ik plaatjes naast elkaar krijg en responsive is | nog een punt | dit wil ik zeker |
+  | Ik wil graag weten hoe je een stuk tekst halverwege kan laten stoppen en meer tekst laat zien wanneer het scherm groter wordt            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
