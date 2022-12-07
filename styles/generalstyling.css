@@ -1,0 +1,115 @@
+footer a{
+	color: var(--color-text);
+}
+
+footer > section:nth-of-type(1){
+	background-image: url(../images/footerimg.png);
+	background-size: auto 8em;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 10em;
+	border-top: 1px var(--color-border) solid;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	/* justify-content: center; */
+	gap: .3em
+}
+
+footer > section:nth-of-type(1) p{
+	font-size: .8em;
+	text-align: center;
+	margin: 1em 6.8em 0 6.8em;
+}
+
+footer > section:nth-of-type(1) span{
+	text-transform: uppercase;
+}
+
+footer button{
+	background-color: var(--color-webtoongreen);
+	border: none;
+	border-radius: 30px;
+	padding: .6em 1.8em;
+	color: var(--color-text2);
+	font-weight: 600;
+	font-size: .7em;
+}
+
+footer > p:nth-of-type(1){
+	border-top: 1px var(--color-border) solid;
+	border-bottom: 1px var(--color-border) solid;
+	padding: 1.5em 0 1.5em 1em;
+	font-size: .8em;
+}
+
+footer > p:nth-of-type(1) a{
+	color: var(--color-text4);
+}
+
+footer > p:nth-of-type(1) a:nth-of-type(1){
+	padding-right: .5em;
+	font-weight: 600;
+}
+
+footer nav ul{
+	display: flex;
+	list-style-type: none;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+footer nav:nth-of-type(1){
+	margin-top: 1em;
+}
+
+footer nav:nth-of-type(1) ul{
+	gap: 1.5em;
+}
+
+footer nav img{
+	width: 1.3em;
+	height: auto;
+}
+
+footer nav:nth-of-type(2){
+	margin: .5em 0;
+}
+
+footer nav:nth-of-type(2) ul li a{
+	color: var(--color-text4);
+	font-size: .7em;
+	border-right: 2px var(--color-border) solid;
+	padding: 0 .5em;
+}
+
+footer > p:nth-of-type(2){
+	text-align: center;
+	font-size: .55em;
+	margin: 2em 0;
+	color: var(--color-text4);
+}
+
+footer > img{
+	width: 3.4em;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+} 
+
+footer > a:last-of-type{
+	text-transform: uppercase;
+	font-size: .7em;
+	/* color: var(--color-text4); */
+	font-weight: 500;
+	border: 1px var(--color-border) solid;
+	background-color: #fff;
+	padding: .9em .5em;
+	border-radius: 200px;
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+}

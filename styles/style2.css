@@ -1,0 +1,9 @@
+body{
+    background-image: url(../images/lalins_curse/backgroundimg/lalins_curse_backgroundimg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header nav ul{
+    display: flex;
+}

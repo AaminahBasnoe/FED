@@ -173,6 +173,64 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
+section: overflow hidden
+
+ul: 
+position relative
+margin 0
+padding 0
+height: em
+overflow hidden
+
+li:
+position absolute
+height width 100%
+top 0
+left 0
+animation: slider 8s infinite linear
+
+li:nth of type(1):
+animation-delay: -3s;
+
+a:
+widht 100%
+height 100%
+display block
+
+img:
+display block
+height wift 100 %
+object-fit: cover
+
+li 
+
+@keyframes slider{
+  0%, 12,5%{
+    transform: translateX(100%);
+  }
+
+  25%{
+    transform: translateX(0%);
+  }
+
+  37,5%{
+    transform: translateX(0%);
+  }
+
+  50%{
+    transform: translateX(-100%);
+  }
+
+  100%{
+    transform: translateX(-100%);
+  }
+
+}
+
+text-overflow: elipsus
+
+
+
   - punt 1
   - punt 2
   - nog een punt
