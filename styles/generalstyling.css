@@ -1,3 +1,30 @@
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-text2: #fff;
+	--color-text3: #FFFFFFB3;
+	--color-text4: #8c8c8c;
+	--color-background:#eee;
+	--color-genrefantasy: #8b00e9;
+	--color-genreromance: #fd337f;
+	--color-genresupernatural: #7a41e9;
+	--color-genresliceoflife: #9ab710;
+	--color-genreaction: #006afa;
+	--color-webtoongreen: #00dc64;
+	--color-focusstate: #00dc6353;
+	--color-border: rgb(204, 204, 204);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: helvetica;
+}
+
+
 footer a{
 	color: var(--color-text);
 }

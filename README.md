@@ -255,11 +255,19 @@ text-overflow: elipsus
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  plaatjes worden overgeslagen
+
+  in de header zegt de screenreader alleen ''koppeling'. 
+
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  bij de 'genre' section en in de slider is de hoverstate niet goed zichtbaar. 
+
+  focus en hover moet nog toegevoegd worden.
 
 
   #### Motoriek (shocks, elastiekjes)
@@ -267,11 +275,33 @@ text-overflow: elipsus
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  shocks
+
+  footer wordt moeilijker klikbaar
+
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  combined loss diabetic eye disease 
+
+  de h3tjes zijn niet heel goed zichtbaar, te klein en te dun
+
+
+  low contrast
+  kleine kopjes/tekst is moeilijk te lezen. de button 'download' is niet heel goed zichtbaar door het lage contrast.
+
+  peripheral field loss
+  vierde section wordt moeilijk zichtbaar
+
+  Kleurenblind
+  alles is nog prima zichtbaar
+
+  darklight mode moet ik nog maken
+
+
 
 </details>
 
@@ -287,14 +317,18 @@ text-overflow: elipsus
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  De eerste pagina lijkt nu best wel op die van de site. Het gehele surface plane gedeelte moet ik wel nog doen. De states moet ik ook nog toevoegen. De html van de 2e pagina is nog niet helemaal af, maar dat is een kwestie van knippen en plakken en de content veranderen, dus dat moet goed komen. Met de styling van de 2e pagina ben ik nog niet zo heel ver. 
+
+  Ik ben wel trots op hoe de homepagina eruit ziet. Het ziet er netjes uit. De slider is echter nog niet gelukt. Ik heb meerdere dingen geprobeerd, maar ik ben er nog steeds niet uitgekomen.  
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Aaminah      | Nada          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Ik wil weten hoe je een infinite carousel maakt met een timer en counter.  | Ik wil graag weten hoe je een responsive grid maakt en hoe je het beste de breedte bepaald van de kolommen.             | en ik dit    | en dan ik dat    |
+  | Ik wil weten hoe je een sticky achtergrond maakt over de hele pagina  | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
