@@ -62,32 +62,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-    Ik heb de screenreader gebruikt op de website die ik ga namaken. De screenreader is over het algemeen wel makkelijk te gebruiken. Alleen viel het mij op dat sommige kopjes 2 keer worden gezegd. Dat kan best irritant zijn. 
+  Ik heb de screenreader gebruikt op de website die ik ga namaken. De screenreader is over het algemeen wel makkelijk te gebruiken. Alleen viel het mij op dat sommige kopjes 2 keer worden gezegd. Dat kan best irritant zijn. 
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-    Waarschijnlijk zegt de screenreader sommige kopjes 2 keer, omdat er een alt tekst staat. Misschien is er een functie waarmee je tegen de screenreader kan zeggen om alleen de alt teksten te lezen. 
+  Waarschijnlijk zegt de screenreader sommige kopjes 2 keer, omdat er een alt tekst staat. Misschien is er een functie waarmee je tegen de screenreader kan zeggen om alleen de alt teksten te lezen. (Of misschien een hele andere manier)
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Er zijn niet overal hoverstates. 
+  - De focus state van de slider werkt niet goed, want als je tabt, gaat de slider gewoon door dus hij blijft niet staan.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Misschien dat je ergens in javascript of css kan zeggen dat het plaatje moet blijven staan als je erop tabt of erover heen hovert. Hoe dit precies moet weet ik niet.s
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-    Ik heb met verschillende beperkingen de website getest. Ik heb geprobeerd de site te gebruiken terwijl 
+  Ik heb met verschillende beperkingen de website getest. De site is prima te gebruiken met elastiekjes. Met shocks is het iets moeilijk, omdat sommige linkjes nog wat klein zijn.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Je kan de hover state groter maken, zodat je beter kan klikken, maar dat de knoppen niet constant zo groot zijn.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  De site is over het algemeen nog wel goed te gebruiken, alleen bijvoorbeeld bij de blur zie je eigenlijk niks meer. Het contrast is bij sommige delen van de site te laag.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Je kan andere kleuren gebruiken met een hoger contrast.
 
 </details>
 
@@ -99,13 +103,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -173,68 +177,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-section: overflow hidden
-
-ul: 
-position relative
-margin 0
-padding 0
-height: em
-overflow hidden
-
-li:
-position absolute
-height width 100%
-top 0
-left 0
-animation: slider 8s infinite linear
-
-li:nth of type(1):
-animation-delay: -3s;
-
-a:
-widht 100%
-height 100%
-display block
-
-img:
-display block
-height wift 100 %
-object-fit: cover
-
-li 
-
-@keyframes slider{
-  0%, 12,5%{
-    transform: translateX(100%);
-  }
-
-  25%{
-    transform: translateX(0%);
-  }
-
-  37,5%{
-    transform: translateX(0%);
-  }
-
-  50%{
-    transform: translateX(-100%);
-  }
-
-  100%{
-    transform: translateX(-100%);
-  }
-
-}
-
-text-overflow: elipsus
-
-
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Gebruik van keyframes, animaties
+  - Slider moet niet in desplay flex
+  - Counter moet met Javascript
+  - Text-overflow: ellipsus
+  - overflow hidden gebruiken
 
 </details>
 
@@ -252,54 +199,64 @@ text-overflow: elipsus
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  - Plaatjes worden overgeslagen
+  - In de header zegt de screenreader alleen ''koppeling'. 
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+ - alt teksten of aria lables geven aan de images.
+  
 
-  plaatjes worden overgeslagen
-
-  in de header zegt de screenreader alleen ''koppeling'. 
+  
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  - bij de 'genre' section en in de slider is de hoverstate niet goed zichtbaar. 
+  -  focus en hover moet nog toegevoegd worden.
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Hover, focus en active states toevoegen.
 
-  bij de 'genre' section en in de slider is de hoverstate niet goed zichtbaar. 
 
-  focus en hover moet nog toegevoegd worden.
+ 
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  - footer wordt moeilijker klikbaar
+  - Sommige knoppen zijn te klein
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - grote knoppen maken
+  - De hover groter maken
 
-  shocks
 
-  footer wordt moeilijker klikbaar
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-  combined loss diabetic eye disease 
-
+  bril: combined loss diabetic eye disease 
   de h3tjes zijn niet heel goed zichtbaar, te klein en te dun
 
-
-  low contrast
+  bril: low contrast
   kleine kopjes/tekst is moeilijk te lezen. de button 'download' is niet heel goed zichtbaar door het lage contrast.
 
-  peripheral field loss
+  bril: peripheral field loss
   vierde section wordt moeilijk zichtbaar
 
-  Kleurenblind
+  bril: Kleurenblind
   alles is nog prima zichtbaar
 
-  darklight mode moet ik nog maken
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  - hoger contrast geven
+  - knop voor groter lettertype
+  - dark light mode maken
+
+  
 
 
 
@@ -335,10 +292,10 @@ text-overflow: elipsus
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Sticky achtergrond gemaakt.
+  - Slider moet met javascript.
+  - Css display grid gebruiken, 1 in beeld laten en eentje links en rechts een class geven, met javascript de animatie activeren. Draggable maken in javascript. 
+
 
 </details>
 
@@ -352,19 +309,24 @@ text-overflow: elipsus
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/pagina1final.jpg" width="320px" alt="uitomst opdracht 1">
+  <img src="readme-images/pagina2final.jpg" width="320px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb heel veel geleerd. Mijn html en css niveau was nog niet zo hoog. Ik wist nog niks van grid en positions. Ook flexbox was nog een beetje vaag voor mij. Met animations had ik ook nog niet echt mee gewerkt. 
+
+  <img src=""  alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  De slider vond ik heel lastig. Ik heb veel geprobeerd, maar uiteindelijk is het mij niet gelukt om er zelf eentje te maken.
+
+  <img src="readme-images/sliderimgreadme.jpg" width="375px" alt="bummer">
 </details>
 
 
