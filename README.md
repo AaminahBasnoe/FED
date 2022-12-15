@@ -340,8 +340,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://developer.mozilla.org/en-US/
+  2. sanne
+  3. https://css-tricks.com/snippets/css/complete-guide-grid/
+  4. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  5. Tim van Ingen (heeft mij met bepaalde onderdelen geholpen)
+  6. https://www.webtoons.com/en/
+  7. https://www.youtube.com/watch?v=5K1_bBy8TV8&ab_channel=TechnicalVM
+  8. https://www.youtube.com/watch?v=IZWL2gALgvM&ab_channel=prod.byaskrv 
+  9. https://www.youtube.com/watch?v=uCfZj5BQRZI&ab_channel=MOONJITV%EB%AC%B8%EC%A7%80
 
 </details>

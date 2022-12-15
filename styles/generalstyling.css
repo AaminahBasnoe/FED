@@ -1,19 +1,90 @@
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+
 :root {
 	/* startje */
-	--color-text:#111;
+	/* backgroundcolor */
+	--color-background: #fff;
+	--color-background-page2-main: rgba(44,44,44,.96);
+
+	/* textcolors */
+	--color-text1:#111;
 	--color-text2: #fff;
 	--color-text3: #FFFFFFB3;
 	--color-text4: #8c8c8c;
-	--color-background:#eee;
+	--color-time-element: #bcbcbc;
+
+	/* genrecolors */
 	--color-genrefantasy: #8b00e9;
 	--color-genreromance: #fd337f;
 	--color-genresupernatural: #7a41e9;
 	--color-genresliceoflife: #9ab710;
 	--color-genreaction: #006afa;
+
+	/* general colors */
 	--color-webtoongreen: #00dc64;
+	--color-hover: #ccda9a;
+	--color-hover2: #151414;
+
+	/* state colors */
 	--color-focusstate: #00dc6353;
+
+	/* borders color */
 	--color-border: rgb(204, 204, 204);
+	--color-border-button-eposide1: #fff;
+
+	/* footer download button */
+	--colordownloadbutton: #00dc64;
+	--shadedownloadbutton: #07391e;
 }
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* startje */
+		/* backgroundcolor */
+		--color-background: #343434;
+		--color-background-page2-main: rgba(44,44,44,.96);
+	
+		/* textcolors */
+		--color-text1:#fff;
+		--color-text2: #fff;
+		--color-text3: #FFFFFFB3;
+		--color-text4: #8c8c8c;
+		--color-time-element: #bcbcbc;
+	
+		/* genrecolors */
+		--color-genrefantasy: #8b00e9;
+		--color-genreromance: #fd337f;
+		--color-genresupernatural: #7a41e9;
+		--color-genresliceoflife: #9ab710;
+		--color-genreaction: #006afa;
+	
+		/* general colors */
+		--color-webtoongreen: #00dc64;
+		--color-hover: #ccda9a;
+		--color-hover2: #151414;
+	
+		/* state colors */
+		--color-focusstate: #00dc6353;
+	
+		/* borders color */
+		--color-border: rgb(204, 204, 204);
+		--color-border-button-eposide1: #fff;
+	
+		/* footer download button */
+		--colordownloadbutton: #00dc64;
+		--shadedownloadbutton: #07391e;
+	}
+
+	header img, main > section:nth-of-type(2) > a img, main > section:nth-of-type(4) > a img{
+		filter: brightness(1000000);
+		filter: invert(1);
+	}
+
+  }
+
 
 *{
 	margin: 0;
@@ -24,9 +95,18 @@ body{
 	font-family: helvetica;
 }
 
+footer{
+	background-color: white;
+	padding-bottom: 1em;
+}
 
 footer a{
 	color: var(--color-text);
+	text-decoration: none;
+}
+
+footer a:hover{
+	text-decoration: underline;
 }
 
 footer > section:nth-of-type(1){
@@ -48,6 +128,7 @@ footer > section:nth-of-type(1) p{
 	font-size: .8em;
 	text-align: center;
 	margin: 1em 6.8em 0 6.8em;
+	color: var(--color-text);
 }
 
 footer > section:nth-of-type(1) span{
@@ -55,13 +136,25 @@ footer > section:nth-of-type(1) span{
 }
 
 footer button{
-	background-color: var(--color-webtoongreen);
+	background-color: var(--colordownloadbutton);
 	border: none;
 	border-radius: 30px;
 	padding: .6em 1.8em;
 	color: var(--color-text2);
 	font-weight: 600;
 	font-size: .7em;
+	box-shadow:0 .2em 0 var(--shadedownloadbutton);
+	transition:.2s;
+}
+
+footer button:hover{
+	--colordownloadbutton: #02652e;
+	--shadedownloadbutton:rgb(44, 44, 16);
+}
+
+footer button:active {
+	box-shadow:0 0 0 var(--sh-button);
+	transform:translateY(.2em);
 }
 
 footer > p:nth-of-type(1){
@@ -101,6 +194,10 @@ footer nav img{
 	height: auto;
 }
 
+footer nav img:hover{
+	width: 2em;
+}
+
 footer nav:nth-of-type(2){
 	margin: .5em 0;
 }
@@ -122,9 +219,10 @@ footer > p:nth-of-type(2){
 footer > img{
 	width: 3.4em;
 	height: auto;
-	position: absolute;
+	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
+	/* bottom: .5em; */
 } 
 
 footer > a:last-of-type{
@@ -139,4 +237,8 @@ footer > a:last-of-type{
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
+}
+
+footer > a:last-of-type:hover{
+	border: 2px var(--color-text1) solid;
 }

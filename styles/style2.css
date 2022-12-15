@@ -1,8 +1,9 @@
-body{
+html{
     background-image: url(../images/lalins_curse/backgroundimg/lalins_curse_backgroundimg.jpg);
-    background-size: 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    /* position: sticky; */
+    background-attachment: fixed;
+    background-position: center top;
 }
 
 h1, h2, h3, p, a{
@@ -12,15 +13,20 @@ h1, h2, h3, p, a{
 body > header{
     background-image: url(../images/lalins_curse/backgroundimg/lalins_curse_backgroundimg.jpg);
     /* van de site overgenomen */
-    /* overflow: hidden; */
+    background-position: center top;
+    background-size: 100% auto;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100%;
-    height: 48px;
-    background-size: 100% auto;
-    -webkit-background-size: 100% auto;
+    height: 3em;
+}
+
+/* tim heeft mij geholpen */
+body > header img, body > main header img{
+    filter: brightness(1000000);
+	filter: invert(0);
 }
 
 body > header nav ul{
@@ -28,35 +34,221 @@ body > header nav ul{
     list-style-type: none;
     flex-wrap: nowrap;
     justify-content: space-between;
-    /* justify-content: flex-end; */
+    gap: .8em;
+    margin: .8em 1em 0 1.6em;
 }
 
-body > header nav ul li{
-    margin: .5em;
+body > header nav ul li:not(li:nth-of-type(2)){
+    width: 1.5em;
 }
 
 body > header nav ul li:first-of-type{
-    display: flex;
-    justify-content: center;
-    justify-self: flex-start;
-    /* background-color: blue; */
+    margin-right: auto;
 }
 
 body > header nav ul li a{
-    display: block;
+    display: flex;
+    width: 100%;
 }
 
 body > header nav ul img{
-    width: 50%;
+    width: 100%;
     display: block;
+}
+
+body > header nav ul img:hover{
+    background-color: var(--color-hover);
 }
 
 body > header nav ul button{
     border-radius: 20px;
     font-size: .7em;
     padding: .4em .5em;
+    width: 100%;
+    border: none;
 }
 
-main{
+body > header nav ul button:hover{
+    background-color: var(--color-hover);
+    border: 2px white solid;
+}
+
+body > main{
     margin-top: 4em;
 }
+
+main header{
+    display: grid;
+    margin: .7em 8.75em 1.25em 1.6em;
+    gap: .5em;
+}
+
+main > header h2{
+    order: -100;
+    font-size: .8em;
+    font-weight: 200;
+}
+
+main > header h1{
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+main > header a{
+    font-size: .7em;
+}
+
+main > header a:hover{
+    text-decoration: none;
+}
+
+main > header > p{
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+main > header p button{
+    background-color: transparent;
+    color: var(--color-text2);
+    border: none;
+
+
+    line-height: 1.5em;
+    height: 3em;
+    word-break: break-word;
+    text-align: left;
+}
+
+main > header ul{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+main > header ul li{
+    display: flex;
+    align-items: center;
+}
+
+main > header ul li p{
+    font-size: .7em;
+}
+
+main > header ul li img{
+    width: 1em;
+    order: -100;
+}
+
+main > header ul li button{
+    border-radius: 20px;
+    border: none;
+    font-size: .6em;
+    font-weight: 600;
+    padding: .3em .6em;
+    text-transform: uppercase;
+    margin-left: .5em;
+}
+
+main > header ul li button:hover{
+    background-color: var(--color-hover);
+    border: 2px white solid;
+}
+
+main header > button{
+    width: 8em;
+    color: var(--color-text2);
+    line-height: 28px;
+    font-size: 11px;
+    border-radius: 32px;
+    border: 1px solid var(--color-border-button-eposide1);
+    background-color: transparent;
+}
+
+main header > button:hover{
+    background-color: rgba(255, 255, 255, 0.521);
+    color: var(--color-text1);
+}
+
+
+main header > button img{
+    width: .6em;
+}
+
+main main{
+    background-color: var(--color-background-page2-main);
+}
+
+/* code van teams */
+main main h2{
+    clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+main main a{
+    text-decoration: none;
+}
+
+main main ul li a{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:	solid .1px var(--color-border);
+    align-items: center;
+}
+
+main main ul li a section div p:nth-of-type(1)::before{
+    content: "♡";
+    font-size: 1.4em;
+    margin-right: .2em;
+
+}
+
+main main ul li:hover{
+    background-color: var(--color-hover2);
+}
+
+main main ul li img{
+    order: -100;
+	width: 4.4em;
+}
+
+/* tim heeft mij geholpen */
+main main ul li h3{
+    font-size: .9em;
+    font-weight: 300;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+main main ul li section{
+    margin-right: 1.5em;
+    padding-left: .8em;
+    overflow: hidden;
+}
+
+main main ul li section div{
+    display: flex;
+    align-items: baseline;
+    gap: .5em;
+}
+
+main main ul li section div p:last-of-type{
+    color: var(--color-time-element);
+}
+
+main main ul li section p{
+    font-size: .75em;
+}
+
+main main ul li a > p{
+    padding: 1em;
+    margin-left: auto;
+}
+
+
